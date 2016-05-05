@@ -17,8 +17,8 @@ The point of this exercise is to benchmark your ability to write code. Although 
 
 ### Constraints
 
-- You must submit an XCode 6 project, targeting iOS 8 or later.
-- Your code can be written in either Objective-C or Swift.
+- You must submit an XCode 7 project, targeting iOS 9 or later.
+- Your code can be written in Swift.
 - You may use any libraries of your choice.
 - You must provide instructions on how to build and run your code.
 - The app must work in both portrait and landscape orientations.
