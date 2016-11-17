@@ -1,6 +1,6 @@
 # Goal
 
-The purpose of these exercises is for the interviewer to get a sense of how you write code and english. This shouldn’t take you more than a few hours to get done. If you already have code on Github or Bitbucket, or a blog that you feel is representative of your current abilities, you can send me a link to those instead of doing these exercises.
+The purpose of these exercises is for the interviewer to get a sense of how you write code and english. This shouldn’t take you more than a few hours to get done.
 
 
 ## Writing exercise
