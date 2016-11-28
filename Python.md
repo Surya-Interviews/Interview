@@ -53,7 +53,7 @@ If any of the above fields cannot be scraped, the value must be `null`.
 
 Your program should be executable on the command line, and must output a JSON object.
 
-The JSON object should look like this:
+The JSON object should look like this (please pay close attention to the structure):
 
 ```json
 {
