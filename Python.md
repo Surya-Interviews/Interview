@@ -19,7 +19,7 @@ The point of this exercise is to benchmark your ability to write code. Although 
 
 - Your solution must be written in Python.
 - You may use any libraries and tools of your choice.
-- You must provide instructions on how to run your code.
+- You must provide instructions on how to run your code. Please be very specific. If you need libraries to be installed, specify exactly how to do so. Specify how to run your program exactly.
 
 
 ### Submission
@@ -51,7 +51,7 @@ For example, the [2016 Platform state of the union](https://developer.apple.com/
 
 If any of the above fields cannot be scraped, the value must be `null`.
 
-Your program should be executable on the command line, and must output a JSON object to stdout.
+Your program should be executable on the command line, and must output a JSON object.
 
 The JSON object should look like this:
 
@@ -77,6 +77,8 @@ The JSON object should look like this:
     ]
 }
 ```
+
+The JSON object can either be printed to stdout (if so, there must be no other output to stdout), or can be written to a file (if so, your program must accept a path as a command line arg, and write the JSON object to that file).
 
 
 # Contact
