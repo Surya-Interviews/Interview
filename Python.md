@@ -29,56 +29,49 @@ The expected submission method is a Github or Bitbucket repository. Please email
 If that's not an option (please explain why), email me a zip file.
 
 
+### Submission
+
+The expected submission method is a Github or Bitbucket repository. Please email me a link. If you'd like to use a private repo and give me read access, that's perfectly fine. My username on Github and Bitbucket is `gps`.
+
+If that's not an option (please explain why), email me a zip file.
+
+
 ### Problem
 
-Apple's [developer website](https://developer.apple.com/videos/) has videos from each WWDC from 2012 to 2016 hosted on it. Your goal is to scrape that website, and generate a list of these links to these resources for every video, for each of the sessions:
+A JSON over HTTP API is deployed at `http://surya-interview.appspot.com`. The goal is to performance test it. This involves making two requests.
 
-- HD and SD videos (if available)
-- PDFs of slides (if available)
+The first request is an HTTP `GET` request to `http://surya-interview.appspot.com/message` that contains a header titled `X-Surya-Email-Id`. This must contain your email address. The response will be a HTTP 200 (unless there's an error - if it's a 400 class error, you did something wrong; if it's a 500 class error, please let me know via email) and contain a JSON body which has the email id you sent as a header, as well as a uuid. Example:
 
-For example, the [2016 Platform state of the union](https://developer.apple.com/videos/play/wwdc2016/102/), should produce a JSON object that looks like this:
-
-```json
+```
+200 OK
 {
-    "title": "Platforms State of the Union",
-    "year": 2016,
-    "sessionNumber": 102,
-    "hdVideo": "http://devstreaming.apple.com/videos/wwdc/2016/102w0bsn0ge83qfv7za/102/102_hd_platforms_state_of_the_union.mp4?dl=1",
-    "sdVideo": "http://devstreaming.apple.com/videos/wwdc/2016/102w0bsn0ge83qfv7za/102/102_sd_platforms_state_of_the_union.mp4?dl=1",
-    "presentationSlides": "http://devstreaming.apple.com/videos/wwdc/2016/102w0bsn0ge83qfv7za/102/102_platforms_state_of_the_union.pdf"
+  "emailId": "gps@surya-soft.com",
+  "uuid": "fa674442-c513-4b1f-8dce-47f70307143c"
 }
 ```
 
-If any of the above fields cannot be scraped, the value must be `null`.
+The second request is an HTTP `POST` request to `http://surya-interview.appspot.com/message`. The post body must be JSON and must have two keys: `emailId` (exactly the same value as you sent before), and `uuid` (the value that was returned in the previous response). Example:
 
-Your program should be executable on the command line, and must output a JSON object.
-
-The JSON object should look like this (please pay close attention to the structure):
-
-```json
+```
 {
-    "sessions": [
-        {
-            "title": "Platforms State of the Union",
-            "year": 2016,
-            "sessionNumber": 102,
-            "hdVideo": "http://devstreaming.apple.com/videos/wwdc/2016/102w0bsn0ge83qfv7za/102/102_hd_platforms_state_of_the_union.mp4?dl=1",
-            "sdVideo": "http://devstreaming.apple.com/videos/wwdc/2016/102w0bsn0ge83qfv7za/102/102_sd_platforms_state_of_the_union.mp4?dl=1",
-            "presentationSlides": "http://devstreaming.apple.com/videos/wwdc/2016/102w0bsn0ge83qfv7za/102/102_platforms_state_of_the_union.pdf"
-        },
-        {
-            "title": "Maximizing Battery Life on OS X",
-            "year": 2013,
-            "sessionNumber": 701,
-            "hdVideo": "http://devstreaming.apple.com/videos/wwdc/2013/701xbx2xqblo39z6tpbdrcz/701/701-HD.mov?dl=1",
-            "sdVideo": "http://devstreaming.apple.com/videos/wwdc/2013/701xbx2xqblo39z6tpbdrcz/701/701-SD.mov?dl=1",
-            "presentationSlides": "http://devstreaming.apple.com/videos/wwdc/2013/701xbx2xqblo39z6tpbdrcz/701/701.pdf"
-        }
-    ]
+  "emailId": "gps@surya-soft.com",
+  "uuid": "fa674442-c513-4b1f-8dce-47f70307143c"
 }
 ```
 
-The JSON object can either be printed to stdout (if so, there must be no other output to stdout), or can be written to a file (if so, your program must accept a path as a command line arg, and write the JSON object to that file).
+The response if successful will be a HTTP 200, with a body that reads `Success`. If you get a 400 class error you did something wrong. If you get a 500 class error, please let me know via email.
+
+You are expected to make each of these requests 100 times and provide the following statistics for the response time of each API:
+
+- 10th percentile
+- 50th percentile
+- 90th percentile
+- 95th percentile
+- 99th percentile
+- Mean
+- Standard Deviation
+
+Please note that your solution *must be* concurrent. That is, you cannot make 200 requests in sequence. You should be making at least 10 requests at a time. Obviously, since one of the requests requires data from the previous response, you will have to do those in sequence.
 
 
 # Contact
