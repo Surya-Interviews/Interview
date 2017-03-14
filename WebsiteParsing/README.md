@@ -42,7 +42,7 @@ Your README should at a minimum contain:
 - Clear instructions on how to run your code
 - A description of how you approached the problem. For example, what design choices did you make? Why? Are there any known limitations in your solution? Why? What are some possible ways to overcome those limitations? Are there any further improvements that could be made?
 
-Please note that a submission without a proper README will not be considered - it is as important as the code you submit.
+Your submission will be evaluated for its correctness (i.e. how many errors are in your output), as well as the quality of your code and documentation. Please note that a submission without a proper README will not be considered - it is as important as the code you submit.
 
 
 ## Contact
