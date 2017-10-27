@@ -29,13 +29,6 @@ The expected submission method is a Github or Bitbucket repository. Please email
 If that's not an option (please explain why), email me a zip file.
 
 
-### Submission
-
-The expected submission method is a Github or Bitbucket repository. Please email me a link. If you'd like to use a private repo and give me read access, that's perfectly fine. My username on Github and Bitbucket is `gps`.
-
-If that's not an option (please explain why), email me a zip file.
-
-
 ### Problem
 
 A JSON over HTTP API is deployed at `http://surya-interview.appspot.com`. The goal is to performance test it. This involves making two requests.
