@@ -30,7 +30,7 @@ If that’s not an option (please explain why), email me a zip file.
 
 ### Problem
 
-The goal is to design a very basic expense tracking Django application. The idea is that the application track expenses that are incurred for various clients. An `Expense` must have at least these properties: `timestampOfExpense`, `amount`, `currency`, `title`, `description`. `Expense` objects belong to a `Client`. A `Client` must have at least a `name` property.
+The goal is to design a very basic expense tracking Django application. The idea is that the application tracks expenses that are incurred for various clients. An `Expense` must have at least these properties: `timestampOfExpense`, `amount`, `currency`, `title`, `description`. `Expense` objects belong to a `Client`. A `Client` must have at least a `name` property.
 
 The application should list all clients in the database (with the ability to create one), and clicking on a client should list all expenses associated with the selected client.
 
