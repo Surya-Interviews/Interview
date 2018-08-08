@@ -6,3 +6,4 @@
 - [Python developer](Python.md)
 - [EmberJS developer](Ember.md)
 - [ReactJS developer](React.md)
+- [Java + Play developer](Java-Play.md)
