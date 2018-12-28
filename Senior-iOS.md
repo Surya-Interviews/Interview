@@ -64,7 +64,7 @@ The response will contain a JSON object that looks like this:
 
 You are to cache this data locally on the device (that is, if you've gotten the data once, the next time your app is opened, it should use the locally stored data to render the view and then update data from the server in the background) and render each of these items in a row inside a `UITableView`.
 
-If you are comfortable with RxSwift, we recommend that you use it.
+If you are comfortable with RxSwift, we recommend that you use it (we use RxSwift). If you're comfortable with not using storyboards, avoid using storyboards (we generally do not use storyboards).
 
 
 # Contact
