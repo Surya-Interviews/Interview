@@ -65,7 +65,7 @@ The response will contain a JSON object that looks like this:
 
 You are to cache this data locally on the device (that is, if you've gotten the data once, the next time your app is opened, it should use the locally stored data to render the view and then update data from the server in the background) and render each of these items in a row in a list view.
 
-If you are comfortable with Rx, Kotlin coroutines, etc. we recommend you use them. We recommend avoiding Dagger, but feel free to use it if you must.
+If you are comfortable with Rx, Kotlin coroutines, etc. we recommend you use them. We recommend avoiding Dagger, but feel free to use it if you must. If you’re in the habit of writing tests, please do so. Again, the idea is to have this be representative of how you code professionally.
 
 
 # Contact
