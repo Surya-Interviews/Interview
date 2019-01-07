@@ -19,14 +19,14 @@ The point of this exercise is to benchmark your ability to write code. Although 
 ### Constraints
 
 - You must submit an Android Studio project and a signed APK (a self signed APK is fine).
-- Your code must be written using the Android SDK in Java, targeting API level 22 or later (`minSdkVersion` must be no higher than 21).
+- Your code must be written using the Android SDK in Java or Kotlin (preferred), targeting API level 22 or later (`minSdkVersion` must be no higher than 21).
 - You may use any libraries of your choice.
 - You must provide instructions on how to build and run your code.
 - The app must work in both portrait and landscape orientations.
 
 ### Submission
 
-The expected submission method is a Github or Bitbucket repository. Please email me a link. If you'd like to use a private repo and give me read access, that’s perfectly fine. My username on Github and Bitbucket is `gps`.
+The expected submission method is a Github.com, Bitbucket.com, or Gitlab.com repository. Please email me a link. If you'd like to use a private repo and give me read access, that’s perfectly fine. My username on Github.com and Bitbucket.com is `gps`. My username on Gitlab.com is `gp5`.
 
 If that’s not an option (please explain why), email me a zip file.
 
@@ -64,6 +64,8 @@ The response will contain a JSON object that looks like this:
 ```
 
 You are to cache this data locally on the device (that is, if you've gotten the data once, the next time your app is opened, it should use the locally stored data to render the view and then update data from the server in the background) and render each of these items in a row in a list view.
+
+If you are comfortable with Rx, Kotlin coroutines, etc. we recommend you use them. We recommend avoiding Dagger, but feel free to use it if you must.
 
 
 # Contact
