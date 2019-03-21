@@ -17,7 +17,7 @@ The point of this exercise is to benchmark your ability to write code. Although 
 ### Constraints
 
 - Your solution must be written in Python. Python 3 is preferred, but Python 2 is fine.
-- Ideally, you should use either Django (preferred) or Flask, but if you’re unfamiliar with either, feel free to use a framework that you’re comfortable in.
+- You should use Django.
 - You are free to use any database you'd like. Explain your choice in your README.
 - You may use any other libraries you find useful.
 - You must have a README. It must have instructions on how to build, and run your code. It should also include details about database setup.
