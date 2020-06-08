@@ -19,7 +19,8 @@ The point of this exercise is to benchmark your ability to write code. Although 
 ### Constraints
 
 - You must submit an Android Studio project and a signed APK (a self signed APK is fine).
-- Your code must be written using the Android SDK in Java or Kotlin (preferred), targeting API level 22 or later (`minSdkVersion` must be no higher than 21).
+- Your code must be written using the Android SDK in Kotlin, targeting API level 29 or later (`minSdkVersion` must be no higher than 21).
+- You must use the [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/).
 - You may use any libraries of your choice.
 - You must provide instructions on how to build and run your code.
 - The app must work in both portrait and landscape orientations.
@@ -65,7 +66,7 @@ The response will contain a JSON object that looks like this:
 
 You are to cache this data locally on the device (that is, if you've gotten the data once, the next time your app is opened, it should use the locally stored data to render the view and then update data from the server in the background) and render each of these items in a row in a list view.
 
-If you are comfortable with Rx, Kotlin coroutines, etc. we recommend you use them. We recommend avoiding Dagger, but feel free to use it if you must. If you’re in the habit of writing tests, please do so. Again, the idea is to have this be representative of how you code professionally.
+We recommend avoiding Dagger, but feel free to use it if you must. If you’re in the habit of writing tests, please do so. Again, the idea is to have this be representative of how you code professionally.
 
 
 # Contact
