@@ -17,11 +17,15 @@ The point of this exercise is to benchmark your ability to write code. Although 
 
 ### Constraints
 
-- You must submit an XCode 10.1 project, targeting iOS 12 or later.
-- Your code must be written in Swift 4.2.
+- You must submit an Xcode 11 project, targeting iOS 13.0 and above.
+- Your code must be written in Swift 5 or later.
 - You may use any libraries of your choice.
 - You must provide instructions on how to build and run your code.
 - Your app must work in both portrait and landscape orientations, on all iOS devices (all sizes of iPhones and iPads that support iOS 12, including multi tasking modes on iPads).
+- Do not use storyboards (we do not use them when we build apps). 
+- We strongly encourage you to use a reactive programming framework (we use RxSwift).
+- You are required to use UIKit, and not SwiftUI (you are more than welcome to send us a SwiftUI implementation in addition to your UIKit implementation).
+
 
 ### Submission
 
@@ -63,9 +67,6 @@ The response will contain a JSON object that looks like this:
 ```
 
 You are to cache this data locally on the device (that is, if you've gotten the data once, the next time your app is opened, it should use the locally stored data to render the view and then update data from the server in the background) and render each of these items in a row inside a `UITableView`.
-
-If you are comfortable with RxSwift, we recommend that you use it (we use RxSwift). If you're comfortable with not using storyboards, avoid using storyboards (we generally do not use storyboards).
-
 
 # Contact
 
