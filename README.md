@@ -14,7 +14,7 @@ The point of this exercise is to benchmark your ability to write code. Although 
 
 ### Constraints
 
-- You must submit an Xcode 10 project (or higher), targeting iOS 11 or later.
+- You must submit an Xcode 10 project or higher, targeting iOS 11 or later.
 - Your code must be written in Swift 4 or later.
 - You may use any libraries of your choice.
 - You must provide instructions on how to build and run your code.
